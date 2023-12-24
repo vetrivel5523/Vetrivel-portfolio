@@ -1,0 +1,10 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    background-image: url(/images/ban2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
