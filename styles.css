@@ -8,7 +8,7 @@
 } */
 
 .banner {
-    background-image: url(/images/ban2.jpg);
+    background-image: url(/images/ban5.avif);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 150px 0;
@@ -28,4 +28,8 @@
 
 .smt {
     padding-bottom: 20px
+}
+
+.click {
+    text-decoration: none;
 }
