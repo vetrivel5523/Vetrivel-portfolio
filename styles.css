@@ -69,7 +69,6 @@
     text-decoration: none;
 }
 
-/* SERVICES
 
 #serviceslist {
     display: flex;
@@ -107,6 +106,6 @@
 }
 
 /* ===== WORK =====*/
-/* .service__container {
+.service__container {
     row-gap: 2rem;
-} */
+}
