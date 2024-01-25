@@ -113,3 +113,6 @@
 .service__container {
     row-gap: 2rem;
 }
+button:hover{
+    background-color: cyan;
+}
