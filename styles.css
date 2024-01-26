@@ -8,9 +8,6 @@
     width: 180px;
 } */
 
-.Edu {
-    margin-left: 25px;
-}
 
 .nav-item {
     padding: 0;
@@ -113,6 +110,4 @@
 .service__container {
     row-gap: 2rem;
 }
-button:hover{
-    background-color: cyan;
-}
+
