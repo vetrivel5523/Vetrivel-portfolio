@@ -1,114 +1,245 @@
+/* Global Styles */
 * {
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Poppins', sans-serif; /* Set default font family for all elements */
 }
 
-/* .logo1 {
-    height: 150px;
-    width: 180px;
-} */
-
-
-.nav-item {
-    padding: 0;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+/* Add transition effect for navbar links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-/* Button animation */
-.nav-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 250%;
-    height: 300%;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all 0.5s ease;
-    border-radius: 50%;
-    z-index: 0;
-    transform: translate(-50%, -50%) scale(0);
-}
-
-.nav-item:hover::before {
-    transform: translate(-50%, -50%) scale(2);
-}
-
-.nav-item span {
-    z-index: 1;
-    position: relative;
+/* Hover styles for navbar links */
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Change color on hover */
 }
 
 
+/* Styles for the banner section */
 .banner {
-    background-image: url(/images/ban5.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 150px 0;
+    background-image: url(/images/ban5.avif); /* Set background image for the banner */
+    background-size: cover; /* Make sure the background image covers the entire element */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    padding: 150px 0; /* Add padding to the top and bottom of the banner */
 }
 
+
+
+/* Styles for social icons */
 .social-icon {
-    padding-bottom: 10px;
-    font-size: 2.5rem;
+    padding-bottom: 10px; /* Add padding to the bottom of social icons */
+    font-size: 2.5rem; /* Set font size for social icons */
 }
 
+/* Additional styles for social icons */
 .social-icon-2 {
-    padding: 20px 0;
-    padding-top: 20px;
-    font-size: 2.5rem;
+    padding: 20px 0; /* Add padding to social icons */
+    padding-top: 20px; /* Add additional padding to the top of social icons */
+    font-size: 2.5rem; /* Set font size for social icons */
 }
 
-
+/* Styles for small text */
 .smt {
-    padding-bottom: 20px
+    padding-bottom: 20px; /* Add padding to the bottom of small text */
 }
 
+/* Styles for clickable elements */
 .click {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from clickable elements */
 }
 
+/* Styles for educational list */
+.Edu {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding from the list */
+}
 
+.Edu li {
+    margin-bottom: 20px; /* Add margin at the bottom of list items */
+    position: relative; /* Set position as relative for list items */
+    animation: fadeInUp 0.5s ease forwards; /* Apply animation to list items */
+}
+
+.Edu li h5 {
+    font-size: 18px; /* Set font size for heading inside list items */
+    color: #333; /* Set color for heading inside list items */
+    margin-bottom: 5px; /* Add margin at the bottom of headings */
+}
+
+.Edu li strong {
+    font-weight: bold; /* Make text inside <strong> elements bold */
+}
+
+.Edu li span {
+    color: #666; /* Set color for <span> elements inside list items */
+}
+
+/* Alternating styles for list items */
+.Edu li:nth-child(odd) {
+    background-color: #b8d7fa; /* Set background color for odd list items */
+    padding: 10px; /* Add padding to list items */
+    border-radius: 5px; /* Add border radius to list items */
+    animation: slideInRight 0.5s ease forwards; /* Apply animation to odd list items */
+}
+
+.Edu li:nth-child(even) {
+    background-color: #56ccf2; /* Set background color for even list items */
+    padding: 10px; /* Add padding to list items */
+    border-radius: 5px; /* Add border radius to list items */
+    animation: slideInLeft 0.5s ease forwards; /* Apply animation to even list items */
+}
+
+/* Styles for services list section */
 #serviceslist {
-    display: flex;
-    padding: 0 2rem;
-    flex-wrap: wrap;
-    gap: 50px;
-
+    display: flex; /* Use flexbox layout for the services list */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Align items evenly with space around */
+    margin-top: 50px; /* Add margin to the top of the services list */
 }
 
-.box1 {
-    float: left;
-    width: 300px;
-    height: 240px;
-    background-color: rgb(100, 100, 100);
-    border-radius: 20px;
-    padding: 15px;
-
-}
-
-.box2 {
-    float: left;
-    width: 300px;
-    height: 240px;
-    background-color: rgb(100, 100, 100);
-    border-radius: 20px;
-    padding: 15px;
-}
-
+/* Styles for service boxes */
+.box1,
+.box2,
 .box3 {
-    float: left;
-    width: 300px;
-    height: 240px;
-    background-color: rgb(100, 100, 100);
-    border-radius: 20px;
-    padding: 15px;
+    background-color: #b8d7fa; /* Set background color for service boxes */
+    width: calc(100% - 40px); /* Set width for service boxes */
+    max-width: 350px; /* Set maximum width for service boxes */
+    margin-bottom: 30px; /* Add margin at the bottom of service boxes */
+    padding: 30px; /* Add padding to service boxes */
+    border-radius: 10px; /* Add border radius to service boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow to service boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
 }
 
-/* ===== WORK =====*/
-.service__container {
-    row-gap: 2rem;
+/* Hover styles for service boxes */
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    transform: translateY(-5px); /* Move service boxes upward on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add larger box shadow on hover */
 }
 
+/* Styles for headings in services list section */
+#serviceslist h2 {
+    color: #333; /* Set color for headings */
+    margin-bottom: 20px; /* Add margin at the bottom of headings */
+}
+
+/* Styles for text in services list section */
+#serviceslist .skills__text {
+    color: #666; /* Set color for text */
+    font-size: 16px; /* Set font size for text */
+    line-height: 1.6; /* Set line height for text */
+}
+
+/* Media queries for screens larger than 768px */
+@media screen and (min-width: 768px) {
+    .box1,
+    .box2,
+    .box3 {
+        width: calc(33.33% - 40px); /* Set width for service boxes on larger screens */
+    }
+}
+
+/* Styles for general list items */
+li {
+    font-size: 18px; /* Set font size for list items */
+    color: #333; /* Set color for list items */
+    margin-bottom: 10px; /* Add margin at the bottom of list items */
+}
+
+/* Styles for buttons */
+button {
+    background-color: #3498db; /* Set background color for buttons */
+    color: #fff; /* Set text color for buttons */
+    border: none; /* Remove border from buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    border-radius: 5px; /* Add border radius to buttons */
+    cursor: pointer; /* Set cursor to pointer for buttons */
+    transition: background-color 0.3s ease; /* Add transition effect for background color */
+}
+
+/* Hover styles for buttons */
+button:hover {
+    background-color: #2980b9; /* Change background color on hover */
+}
+
+/* Styles for links */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color for links */
+}
+
+/* Styles for contact section heading */
+#Contact h4 {
+    font-size: 30px; /* Set font size for heading */
+    font-weight: 600; /* Set font weight for heading */
+    margin-bottom: 50px; /* Add margin at the bottom of heading */
+    color: #333; /* Set color for heading */
+    text-align: center; /* Align heading to the center */
+}
+
+/* Styles for contact form input fields */
+#con input[type="text"],
+#con input[type="email"],
+#con textarea {
+    width: 100%; /* Set width to 100% for input fields and textarea */
+    padding: 12px; /* Add padding to input fields and textarea */
+    border: 1px solid #ccc; /* Add border to input fields and textarea */
+    border-radius: 4px; /* Add border radius to input fields and textarea */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 6px; /* Add margin at the top of input fields and textarea */
+    margin-bottom: 16px; /* Add margin at the bottom of input fields and textarea */
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Styles for submit button in contact form */
+#con input[type="submit"] {
+    background-color: #4CAF50; /* Set background color for submit button */
+    color: white; /* Set text color for submit button */
+    padding: 12px 20px; /* Add padding to submit button */
+    border: none; /* Remove border from submit button */
+    border-radius: 4px; /* Add border radius to submit button */
+    cursor: pointer; /* Set cursor to pointer for submit button */
+}
+
+/* Hover styles for submit button in contact form */
+#con input[type="submit"]:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40; /* Set background color for footer */
+    color: #fff; /* Set text color for footer */
+    padding: 50px 0; /* Add padding to footer */
+    text-align: center; /* Align text in the center */
+}
+
+/* Styles for text in footer */
+footer p {
+    font-size: 18px; /* Set font size for text in footer */
+}
+
+/* Styles for social icons in footer */
+.social-icon a {
+    color: #fff; /* Set color for social icons */
+    font-size: 24px; /* Set font size for social icons */
+    margin: 0 10px; /* Add margin around social icons */
+}
+
+/* Hover styles for social icons in footer */
+.social-icon a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Set initial opacity to 0 */
+        transform: translateY(20px); /* Move element downward */
+    }
+    to {
+        opacity: 1; /* Set final opacity to 1 */
+        transform: translateY(0); /* Reset element's position */
+    }
+}
