@@ -139,6 +139,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: -500px;
+    padding-bottom: -5000px;
 }
 
 .home-content h3 {
@@ -208,13 +210,12 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 30px 20px; */
+    padding: 30px 20px;
     background-color: #1f242d;
 }
 
 .about-content {
     text-align: center;
-    padding: 20px;
     max-width: 600px;
     color: #c3c3c3;
 }
