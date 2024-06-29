@@ -5,317 +5,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vetrivel Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Pacifico&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="/styles.css">
+    <!-- font awesome cdnjs link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<nav class="navbar navbar-expand-lg py-3 text-uppercase bg-dark navbar-dark sticky-top">
-    <div class="container m-auto">
-        <p class="navbar-brand fs-3" href="#">Vetrivel K</p>
-        <!-- <img src="/images/logo1.png" class="logo1" /> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#Education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#Skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#Projects">projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#Contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<section class=" banner text-center text-uppercase">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="w-75 m-auto text-light">
-                    <h2 class="pb-3">HI MY NAME IS VETRIVEL K</h2>
-                    <h4 class="pb-4">I am a Student at Kongunadu College of Engineering and Technology, I have
-                        Skills on Web
-                        development and Python Development</h4>
-                    <a href="https://wa.me/+919445216046?text=Hi vetrivel" class="btn btn-dark btn-lg text-uppercase"
-                        target="_blank">Connect with Me</a><br>
-                    <br><a href="/pdf/VETRIVEL KUMARASAMY MAIN.pdf" class="btn btn-dark btn-lg text-uppercase"
-                        download>Download
-                        cv</a>
-                    <div class="social-icon-2">
-                        <a
-                            href="https://www.linkedin.com/in/vetrivel-kumarasamy-45b700227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                            <i class="fa-brands fa-linkedin"></i></a>
+<body>
+    <!-- /css file link -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    </head>
+
+    <body>
+        <!-- header design -->
+        <header class="header">
+            <h3 class="logo">Vetrivel K</h3>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#Skill">Skill</a>
+                <a href="#Project">Project</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- home section design -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,It's Me</h3>
+                <h1>Vetrivel Kumarasamy</h1>
+                <h3>And I'm a <span>Student At KNCET</span></h3>
+                <p>I am a BE student . I am interested in Web development and also doing competitive programming.</p>
+                <div class="social-media">
+                    <a
+                        href="https://www.linkedin.com/in/vetrivel-kumarasamy-45b700227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/vetrivel5523/Vetrivel-Projects.git"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk"><i
+                            class='bx bxl-instagram-alt'></i></a>
+                </div>
+                <!-- Add this code within your header section, before or after other navigation links -->
+                <a href="/pdf/VETRIVEL.K MAIN RESUME.pdf" target="_blank" download class="btn">Download Resume</a>
+
+                <!-- <a href="#" class="btn">Download CV</a> -->
+            </div>
+
+        </section>
+
+        <!-- ABout section -->
+        <section class="about" id="about">
+
+            <div class="about-content">
+                <h2 class="heading">About <span> Me </span></h2>
+                <div class="about-img">
+                    <img src="/Images/Vetrivel image.jpg" height="400" width="350" alt="">
+                </div>
+                <!-- <h3>Frontend Developer</h3> -->
+                <p>Front-end Development I am a beginner developer looking for opportunities to expand my skills. I have
+                    knowledge of HTML, CSS, and JavaScript, and I am committed to improving my proficiency in these
+                    technologies.</p>
+                <p>If you are looking for a motivated and dedicated front-end developer, I am available for work
+                    opportunities and excited to contribute to projects that allow me to expand my experience and
+                    knowledge.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- section  Skill-->
+
+        <section class="Skill" id="Skill">
+            <h2 class="heading"> My <span> Skills</span></h2>
+            <div class="skill-container">
+                <div class="skill-box">
+                    <h3>Programing Langauage</h3>
+                    <p>C Langauage</p>
+                    <p>Python Langauage</p>
+                    <p>Basic Java </p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>web Development</h3>
+                    <p>Html</p>
+                    <p>Css</p>
+                    <P>JavaScript</P>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- project section -->
+        <section class="Project" id="Project">
+            <h2 class="heading">My <span>Project</span></h2>
+            <div class="Project-container">
+                <div class="Project-box">
+                    <img src="/Images/Manual Mode Screen Controller.jpg" height="400" width="600" alt="">
+                    <div class="Project-layer">
+                        <h4>Manual Mode Screen Controller</h4>
+                        <p>We have an Android app for COVID-19 that allows you to use commands to manipulate the windows
+                            screen
+                        </p>
                         <a href="https://github.com/vetrivel5523/Vetrivel-Projects.git"><i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk"><i
-                                class="fa-brands fa-square-instagram"></i></a>
+                                class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="Project-box">
+                    <img src="/Images/Smart Voting System.png" height="400" width="600" alt="">
+                    <div class="Project-layer">
+                        <h4>Smart Voting System</h4>
+                        <p>To use python programming to find and notify the candidate who has already received a vote.
+                        </p>
+                        <a href="https://github.com/vetrivel5523/Vetrivel-Projects.git"><i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="Project-box">
+                    <img src="/Images/beauty.webp" height="400" width="600" alt="">
+                    <div class="Project-layer">
+                        <h4>Beautician Portfolio</h4>
+                        <p>A personal portfolio site showcasing their Works.</p>
+                        <a href="https://kavibeautician.netlify.app/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="Project-box">
+                    <img src="/Images/Portfolio.png" height="400" width="600" alt="">
+                    <div class="Project-layer">
+                        <h4>My Portfolo</h4>
+                        <p>A personal portfolio site showcasing my Skills,
+                            achievements, and projects.</p>
+                        <a href="https://vetri.netlify.app/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="Project-box">
+                    <img src="/Images/Calsi.png" height="400" width="600" alt="">
+                    <div class="Project-layer">
+                        <h4>Calculator</h4>
+                        <p> By using HTML, CSS, JS to create Simple Calculator</p>
+                        <a href="https://vetricalsi.netlify.app/"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section id="About" class="py-5">
-    <h2 class="text-center pb-4">About Me</h2>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center">
-                <img src="/images/my3.png" alt="vetrivel" class="img-fluid w-75 m-auto pb-3" />
-            </div><br>
-            <div class="col-md-6">
-                <p class="pb-3">Experienced leader skilled in guiding teams to success through clear vision and
-                    motivation. Strong at teamwork, communication, and achieving shared goals. I excel in bringing
-                    people together, leveraging diverse strengths for great results in any environment.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Education -->
-<section id="Education" class="bg-light py-5 skills-padding ">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center pb-4">Education</h2>
-                <ol class="Edu">
-                    <li>
-                        <h3>COLLAGE</h3>
-                        <br><strong>Collage Name: </strong> Kongunadu college of Engineering and Technology,Trichy.
-                        <br><strong>Degree: </strong>BE
-                        <br><strong>Major: </strong>Electronics and Communication Engineering
-                        <br><strong>CGPA: </strong>7.84-untill 5th sem
-                        <br><strong>Year of Graduation: </strong>2025
-                    </li><br>
-                    <li>
-                        <h3>12th STANDARD</h3>
-                        <br><strong>School Name: </strong> Bharathi Higher Secondary school,Reddipatti,Namakkal.
-                        <br><strong>Major: </strong>Maths Computer
-                        <br><strong>Percentage: </strong>85.85%
-                        <br><strong>Year of Graduation: </strong>2021
-                    </li><br>
-                    <li>
-                        <h3>10th STANDARD</h3>
-                        <br><strong>School Name: </strong>Govt Boys Higher Secondary
-                        school,Sendamangalam.
-                        <br><strong>Percentage: </strong>74.4%
-                        <br><strong>Year of Graduation: </strong>2019
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
-</section>
-<!-- skills -->
-<section id="Skills" class="bg-light py-5 skills-padding ">
-    <div class="container">
-        <div class="row">
-            <h2 class="text-center pb-4">Skills</h2>
-
-            <div class="service bd-grid">
-                <div>
-                    <div id="Skillslist">
-                        <div class="box1">
-                            <h2>Web Design</h2>
-                            <p class="skills__text"> creating the visual elements and layout of a
-                                website, it
-                                Have
-                                programming
-                                languages like HTML,CSS,Bootstrap and JavaScript.
-                            </p>
+        <!-- contact section -->
+        <section class="Contact" id="Contact">
+            <h2 class="heading">Contact<span> Me!</span></h2>
+            <div id="con" class="row text-center justify-content-center">
+                <div class="col-md-7">
+                    <form action="https://formspree.io/f/xnqeaeea" method="POST">
+                        <div>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" required><br><br>
                         </div>
-                        <div class="box2">
-                            <h2>Python</h2>
-                            <p class="skills__text">Python is commonly used for developing websites and
-                                software, task
-                                automation, data
-                                analysis,
-                                and
-                                data visualisation.</p>
-
+                        <div>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br><br>
                         </div>
-                        <div class="box3">
-                            <h2>IOT</h2>
-                            <p class="skills__text">the collective network of connected devices and the
-                                technology.
-                                between devices and the cloud.</p>
+                        <div>
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="2" cols="20" required></textarea><br><br>
                         </div>
-                        <div class="box4">
-                            <h2>Github</h2>
-                            <p class="skills__text">It's used for storing, tracking, and collaborating on software
-                                projects.</p>
+                        <div class="smt">
+                            <input type="submit" value="Submit">
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<section id="Projects" class="bg-light py-5 skills-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center pb-4">Projects</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Manual Mode Screen Controller Using IOT</h5>
-                                <p class="card-text">A project that allows manual control of a screen through IoT
-                                    technology, enabling remote accessibility and convenience.</p>
-                                <a href="https://github.com/vetrivel5523/Manual-mode-screen-controller"
-                                    class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Real Time Image Based Smart Voting System Using Python</h5>
-                                <p class="card-text">An innovative voting system that uses real-time image processing
-                                    and Python to ensure secure and efficient voting.</p>
-                                <a href="https://github.com/vetrivel5523/Realtime-image-based-smart-voting-system"
-                                    class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Facebook Signup Page Clone Using HTML and CSS</h5>
-                                <p class="card-text">A clone of the Facebook signup page created using HTML and CSS to
-                                    replicate the design and functionality.</p>
-                                <a href="https://facebooksignupclone.netlify.app/" class="btn btn-primary">View
-                                    Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Calculator Using HTML, CSS, JavaScript</h5>
-                                <p class="card-text">A simple yet functional calculator built with HTML, CSS, and
-                                    JavaScript, featuring basic arithmetic operations.</p>
-                                <a href="https://vetricalsi.netlify.app/" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Portfolio Website Using HTML, CSS, Bootstrap</h5>
-                                <p class="card-text">A personal portfolio website designed with HTML, CSS, and Bootstrap
-                                    to showcase projects and skills.</p>
-                                <a href="https://vetri.netlify.app/" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Beautician Website Using HTML, CSS, Bootstrap</h5>
-                                <p class="card-text">A professional website for a beautician, created using HTML, CSS,
-                                    and Bootstrap to highlight services and portfolio.</p>
-                                <a href="https://kavibeautician.netlify.app/" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Real Time Handsign Virtual Mouse</h5>
-                                <p class="card-text">A virtual mouse controlled by hand signs, utilizing real-time image
-                                    processing techniques for a futuristic user experience.</p>
-                                <a href="https://github.com/vetrivel5523/Real-Time-Handsign-VIrtual-Mouse.git"
-                                    class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </section>
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p> Copyright &copy; 2024 by Vetrivel Kumarasamy | All Rights Reserved.</p>
             </div>
-        </div>
-    </div>
-</section>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
 
-<section id="Contact" class="bg-light text-dark skills-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center pb-4">Contact</h2>
-            </div>
-        </div>
-        <div id="con" class="row text-center justify-content-center">
-            <div class="col-md-7">
-                <form action="https://formspree.io/f/xnqeaeea" method="POST">
-                    <div>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" required><br><br>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="2" cols="20" required></textarea><br><br>
-                    </div>
-                    <div class="smt">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-<section>
-    <footer class="py-3">
-        <div class="container text-center">
-            <p>VETRIVEL KUMARASAMY</p>
-            <div class="social-icon">
-                <a
-                    href="https://www.linkedin.com/in/vetrivel-kumarasamy-45b700227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                    <i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/vetrivel5523/Vetrivel-Projects.git"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk"><i
-                        class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center m-0">Copyright: 2024 Designed and Developed by Vetrivel Kumarasamy</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</section>
-</body>
+        <!-- scroll revel -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/f2a8542688.js" crossorigin="anonymous"></script>
+        <!-- javascript -->
+        <script src="script.js"></script>
+
+
+
+    </body>
 
 </html>
