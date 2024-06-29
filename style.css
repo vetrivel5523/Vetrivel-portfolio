@@ -187,7 +187,7 @@ span {
     box-shadow: 0 0 1 rem var(--main-color)
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -203,6 +203,7 @@ span {
 .btn:hover {
     box-shadow: none;
 }
+
 /* About  */
 
 .about {
@@ -400,8 +401,8 @@ span {
     margin-top: 6px;
     margin-bottom: 16px;
 }
-label 
-{
+
+label {
     font-size: medium;
 }
 
@@ -580,4 +581,78 @@ footer {
         width: 100%;
     }
 
+}
+
+@media (max-width: 1300px) {
+    section {
+        padding: 10rem 3% 2rem;
+        /* Adjust padding as needed */
+    }
+
+    .skill {
+        padding-bottom: 7rem;
+    }
+
+    .Project {
+        padding-bottom: 7rem;
+    }
+
+    .Contact {
+        padding-bottom: auto;
+        /* Adjust or remove if not needed */
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        padding: 10rem 3% 2rem;
+        /* Adjust padding as needed */
+    }
+
+    .skill {
+        padding-bottom: 7rem;
+    }
+
+    .Project {
+        padding-bottom: 7rem;
+    }
+
+    .Contact {
+        padding-bottom: auto;
+        /* Adjust or remove if not needed */
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        padding: 8rem 3% 2rem;
+        /* Example adjustment for smaller screens */
+    }
+
+    .skill {
+        padding-bottom: 5rem;
+        /* Example adjustment */
+    }
+
+    .Project {
+        padding-bottom: 5rem;
+        /* Example adjustment */
+    }
+
+    .Contact {
+        padding-bottom: 3rem;
+        /* Example adjustment */
+    }
+
+    .footer {
+        padding: 1rem 3%;
+    }
 }
