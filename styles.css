@@ -1,385 +1,614 @@
-/*================================= Styles for the Home Section ===========================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: white;
+  --max-width: 1200px;
+}
+
 * {
-    font-family: 'Poppins', sans-serif;
-    /* Set default font family for all elements */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* Add transition effect for navbar links */
-.navbar-nav .nav-link {
-    transition: color 0.3s ease;
-    /* Smooth transition for color change */
+a {
+  text-decoration: none;
 }
 
-/* Hover styles for navbar links */
-.navbar-nav .nav-link:hover {
-    color: #ffc107;
-    /* Change color on hover */
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 
-/*==================================== Styles for the banner section ===========================*/
-.banner {
-    background-image: url(/images/ban5.avif);
-    /* Set background image for the banner */
-    background-size: cover;
-    /* Make sure the background image covers the entire element */
-    background-repeat: no-repeat;
-    /* Prevent background image from repeating */
-    padding: 150px 0;
-    /* Add padding to the top and bottom of the banner */
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: var(--extra-light);
+  z-index: 99;
 }
 
-/*=================================== Styles for the About section ===========================*/
-/* Apply border-radius to create a circular shape for images */
-#About img {
-    border-radius: 50%;
-    /* Makes the image circular */
-    animation: slideInLeft 1.5s ease-in-out;
-    /* Apply slide-in animation to the 'img' */
+.nav__content {
+  max-width: var(--max-width);
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Apply slide-in animation to the last column of 'About' section */
-#About .col-md-6:last-child {
-    animation: slideInRight 1.5s ease-in-out;
-    /* Apply slide-in animation to the last column */
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
 }
 
-/* Set the color of 'h2' elements to dark blue */
-#About h2 {
-    color: #003366;
-    /* Dark blue color */
+nav .checkbox {
+  display: none;
 }
 
-/* Set font size and line height for 'p' elements */
-#About p {
-    font-size: 18px;
-    /* Font size of paragraphs */
-    line-height: 1.6;
-    /* Line height of paragraphs */
+nav input {
+  display: none;
 }
 
-
-/* Styles for social icons */
-.social-icon {
-    padding-bottom: 10px;
-    /* Add padding to the bottom of social icons */
-    font-size: 2.5rem;
-    /* Set font size for social icons */
-
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
-/* Additional styles for social icons */
-.social-icon-2 {
-    padding: 20px 0;
-    /* Add padding to social icons */
-    padding-top: 20px;
-    /* Add additional padding to the top of social icons */
-    font-size: 2.5rem;
-    /* Set font size for social icons */
+ul {
+  display: flex;
+  color: var(--primary-color);
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
 }
 
-/* Styles for small text */
-.smt {
-    padding-bottom: 20px;
-    /* Add padding to the bottom of small text */
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
 }
 
-/* Styles for clickable elements */
-.click {
-    text-decoration: none;
-    /* Remove underline from clickable elements */
-}
-
-/*=================================== Styles for educational list =============================*/
-
-#Education h2 {
-    color: #003366;
-}
-
-.Edu {
-    list-style-type: none;
-    /* Remove default list style */
-    padding: 0;
-    /* Remove padding from the list */
-}
-
-.Edu li {
-    margin-bottom: 20px;
-    /* Add margin at the bottom of list items */
-    position: relative;
-    /* Set position as relative for list items */
-    animation: fadeInUp 0.5s ease forwards;
-    /* Apply animation to list items */
-}
-
-.Edu li h5 {
-    font-size: 18px;
-    /* Set font size for heading inside list items */
-    color: #333;
-    /* Set color for heading inside list items */
-    margin-bottom: 5px;
-    /* Add margin at the bottom of headings */
-}
-
-.Edu li strong {
-    font-weight: bold;
-    /* Make text inside <strong> elements bold */
-}
-
-.Edu li span {
-    color: #666;
-    /* Set color for <span> elements inside list items */
-}
-
-/* Alternating styles for list items */
-.Edu li:nth-child(odd) {
-    background-color: #b0e5df;
-    /* Set background color for odd list items */
-    padding: 10px;
-    /* Add padding to list items */
-    border-radius: 5px;
-    /* Add border radius to list items */
-    animation: slideInRight 0.5s ease forwards;
-    /* Apply animation to odd list items */
-}
-
-.Edu li:nth-child(even) {
-    background-color: #b0e5df;
-    /* Set background color for even list items */
-    padding: 10px;
-    /* Add padding to list items */
-    border-radius: 5px;
-    /* Add border radius to list items */
-    animation: slideInLeft 0.5s ease forwards;
-    /* Apply animation to even list items */
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 
-/*=================================== Styles for services list section ===========================*/
-#Skills h2 {
-    color: #003366;
+.home_section {
+  background-color: var(--extra-light);
 }
 
-#Skillslist {
-    display: flex;
-    /* Use flexbox layout for the services list */
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
-    justify-content: space-around;
-    /* Align items evenly with space around */
-    margin-top: 50px;
-    /* Add margin to the top of the services list */
-    font-size: 16px;
-    /* Set font size for text */
+.home_container {
+  min-height: 100vh;
+  padding-top: 100px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
-/* Styles for service boxes */
-.box1,
-.box2,
-.box3,
-.box4 {
-    background-color: #b0e5df;
-    /* Set background color for service boxes */
-    width: calc(100% - 40px);
-    /* Set width for service boxes */
-    max-width: 350px;
-    /* Set maximum width for service boxes */
-    margin-bottom: 30px;
-    /* Add margin at the bottom of service boxes */
-    padding: 30px;
-    /* Add padding to service boxes */
-    border-radius: 10px;
-    /* Add border radius to service boxes */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add box shadow to service boxes */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Add transition effects */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Hover styles for service boxes */
-.box1:hover,
-.box2:hover,
-.box3:hover,
-.box4:hover {
-    transform: translateY(-5px);
-    /* Move service boxes upward on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    /* Add larger box shadow on hover */
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-/* Styles for headings in services list section */
-#Skillslist h2 {
-    color: #333;
-    /* Set color for headings */
-    margin-bottom: 20px;
-    /* Add margin at the bottom of headings */
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
 }
 
-/* Styles for text in services list section */
-#Skillslist .skills__text {
-    font-size: 16px;
-    /* Set font size for text */
-    line-height: 1.6;
-    /* Set line height for text */
+.title span {
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
-/* Media queries for screens larger than 768px */
-@media screen and (min-width: 768px) {
-
-    .box1,
-    .box2,
-    .box3,
-    .box4 {
-        width: calc(33.33% - 40px);
-        /* Set width for service boxes on larger screens */
-    }
+.description {
+  line-height: 1.5rem;
+  color: black;
+  margin-bottom: 2rem;
 }
 
-/*========================================== Style for project cards =========================*/
-#Projects h2 {
-    color: #003366;
+.action__btns {
+  display: flex;
+  gap: 1rem;
 }
 
-.card {
-    background-color: #b0e5df;
-    border: 1px solid #ddd;
-    /* Add a subtle border */
-    border-radius: 8px;
-    /* Rounded corners */
-    transition: box-shadow 0.3s ease;
-    /* Smooth transition for hover effect */
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    /* Move service boxes upward on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    /* Add larger box shadow on hover */
+.hire__me {
+  color: black;
 }
 
-.card-title {
-    font-size: 1.2rem;
-    /* Larger font size for titles */
-    color: #333;
-    /* Dark text color */
-    margin-bottom: 0.5rem;
-    /* Some space below the title */
+.portfolio {
+  color: var(--primary-color);
 }
 
-.card-text {
-    line-height: 1.5;
-    /* Increased line height for better readability */
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
 }
 
-
-/* Center align text within cards */
-.card-body {
-    text-align: center;
+.image {
+  display: grid;
+  place-items: center;
 }
 
-/* Add some padding to cards */
-.card-body {
-    padding: 1.5rem;
+.image img {
+  width: min(18rem, 100%);
+  box-shadow: 2px 2px 2px #a855f7;
+  border-radius: 20%;
 }
 
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
 
-/* ================================== Styles for contact section heading ========================= */
-#Contact h2 {
-    color: #003366;
-}
-
-
-/* Styles for contact form input fields */
-#con input[type="text"],
-#con input[type="email"],
-#con textarea {
+  ul {
+    position: absolute;
     width: 100%;
-    /* Set width to 100% for input fields and textarea */
-    padding: 12px;
-    /* Add padding to input fields and textarea */
-    border: 1px solid #ccc;
-    /* Add border to input fields and textarea */
-    border-radius: 4px;
-    /* Add border radius to input fields and textarea */
-    box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
-    margin-top: 6px;
-    /* Add margin at the top of input fields and textarea */
-    margin-bottom: 16px;
-    /* Add margin at the bottom of input fields and textarea */
-    resize: vertical;
-    /* Allow vertical resizing of textarea */
-}
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
 
-/* Styles for submit button in contact form */
-#con input[type="submit"] {
-    background-color: #2980b9;
-    /* Set background color for submit button */
-    color: white;
-    /* Set text color for submit button */
-    padding: 12px 20px;
-    /* Add padding to submit button */
-    border: none;
-    /* Remove border from submit button */
-    border-radius: 4px;
-    /* Add border radius to submit button */
-    cursor: pointer;
-    /* Set cursor to pointer for submit button */
-}
+  nav #check:checked~ul {
+    left: 0;
+  }
 
-/* Hover styles for submit button in contact form */
-#con input[type="submit"]:hover {
-    background-color: #45a049;
-    /* Change background color on hover */
-}
+  ul li a {
+    font-size: 1.25rem;
+  }
 
-/*===============================Styles for the Footer styles ============================*/
-footer {
-    background-color: #343a40;
-    /* Set background color for footer */
-    color: #fff;
-    /* Set text color for footer */
-    padding: 50px 0;
-    /* Add padding to footer */
+  .home_container {
+    padding: 10rem 1rem 5rem 1rem;
     text-align: center;
-    /* Align text in the center */
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
 }
 
-/* Styles for text in footer */
-footer p {
-    font-size: 18px;
-    /* Set font size for text in footer */
+/* About Section Styles */
+.about_section {
+  background-color: var(--extra-light);
+  text-align: center;
 }
 
-/* Styles for social icons in footer */
-.social-icon a {
-    color: #fff;
-    /* Set color for social icons */
-    font-size: 24px;
-    /* Set font size for social icons */
-    margin: 0 10px;
-    /* Add margin around social icons */
+.about_container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Hover styles for social icons in footer */
-.social-icon a:hover {
-    color: #ffc107;
-    /* Change color on hover */
+.about_content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: black;
 }
 
-/* Keyframe animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        /* Set initial opacity to 0 */
-        transform: translateY(20px);
-        /* Move element downward */
-    }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section_title {
+    font-size: 2rem;
+  }
 
-    to {
-        opacity: 1;
-        /* Set final opacity to 1 */
-        transform: translateY(0);
-        /* Reset element's position */
-    }
+  .about_content {
+    font-size: 1rem;
+  }
+}
+
+.about_btns {
+  margin-top: 7%;
+}
+
+.about_btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about_me {
+  color: black;
+}
+
+/* Education Section Styles */
+.education_section {
+  padding: 80px 0;
+  background-color: var(--extra-light);
+  text-align: center;
+}
+
+.education_container {
+  max-width: 1500px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section_title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333333;
+}
+
+.education_item {
+  margin-bottom: 40px;
+  opacity: 0;
+  /* Initially hide education items */
+  animation: fadeInUp 1s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Fade-in animation */
+}
+
+.education_content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.education_content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education_title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.school_name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.percentage {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.education_title {
+  color: var(--primary-color);
+}
+
+/* Skills Section Styles */
+.skills_section {
+  background-color: var(--extra-light);
+  text-align: center;
+}
+
+.skills_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section_title {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #333333;
+}
+
+.category_title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.skill_category {
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.skill_card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.skill_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill_logo {
+  width: 100px;
+  /* Adjust size as needed */
+  height: 100px;
+  /* Adjust size as needed */
+  margin-bottom: 20px;
+}
+
+.skill_name {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* color: #333333; */
+}
+
+.skill_description {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .section_title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .category_title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .skill_card {
+    padding: 20px;
+  }
+
+  .skill_logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill_name {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .skill_description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .category_title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .skill_card {
+    padding: 15px;
+  }
+
+  .skill_logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill_name {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+
+  .skill_description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Project Section Styles */
+.projects_section {
+  background-color: var(--extra-light);
+  text-align: center;
+}
+
+.projects_container {
+  max-width: 1200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section_title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+
+}
+
+.project_card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project_image {
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
+}
+
+.project_info {
+  padding: 20px;
+}
+
+.project_title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.project_description {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.project_link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project_link i {
+  margin-left: 5px;
+}
+
+/* Center align text inside the section */
+#Contact {
+  text-align: center;
+}
+
+/* Form container adjustments */
+#Contact .container {
+  max-width: 600px;
+  /* Adjust max-width as needed */
+  margin: 0 auto;
+  /* Center align container */
+  padding: 20px;
+  /* Add padding for spacing */
+}
+
+/* Input fields and textarea adjustments */
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Submit button adjustments */
+#Contact input[type="submit"] {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  /* Full width on all screen sizes */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect width */
+}
+
+/* Hover styles for submit button */
+#Contact input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Basic styles for footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles for back to top arrow */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  /* Hide initially */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+.back-to-top:before {
+  content: '';
 }
