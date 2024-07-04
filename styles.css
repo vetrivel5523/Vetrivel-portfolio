@@ -231,6 +231,21 @@ ul li a:hover {
   color: black;
 }
 
+.icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section_title {
@@ -581,7 +596,6 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
