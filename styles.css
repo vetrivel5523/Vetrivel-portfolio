@@ -511,8 +511,8 @@ ul li a:hover {
 }
 
 .project_image {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
