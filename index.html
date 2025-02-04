@@ -69,7 +69,7 @@
     <div class="about-container">
       <div class="intro">
         <h2>About Me</h2>
-        <p>Hi! I’m Titan, a passionate web developer and designer with expertise in HTML, CSS, JavaScript, and
+        <p>Hi! I’m Vetrivel, a passionate web developer and designer with expertise in HTML, CSS, JavaScript, and
           more. I enjoy creating user-centric, responsive web applications that solve real-world problems.</p>
       </div>
     </div>
@@ -446,6 +446,31 @@
 
 
   <script src="/ASSETS/script.js"></script>
+  <!-- Back to Top Button -->
+  <a href="#" id="back-to-top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script>
+    // Show the "Back to Top" button when scrolling down
+    window.onscroll = function () {
+      let backToTopButton = document.getElementById("back-to-top");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block"; // Show button
+      } else {
+        backToTopButton.style.display = "none"; // Hide button
+      }
+    };
+
+    // Scroll to top when clicked
+    document.getElementById("back-to-top").addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent default anchor behavior
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
+    });
+  </script>
+
+
+
 </body>
 
 </html>
