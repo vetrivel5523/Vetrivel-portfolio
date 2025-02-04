@@ -2,358 +2,450 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vetrivel Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Roboto:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/ASSETS/STYLES/styles.css">
 </head>
 
 <body>
-  <nav>
-    <div class="nav__content">
-      <div class="logo"><a>Vetrivel K</a></div>
-      <label for="check" class="checkbox">
-        <i class="ri-menu-line"></i>
-      </label>
-      <input type="checkbox" name="check" id="check" />
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#Contact">Contact</a></li>
+
+  <!-- Header & Navbar Section -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Vetrivel K</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about-me" onclick="closeMenu()">About Me</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
 
-    </div>
-  </nav>
-  <br>
-  <br>
-  <section class="home_section">
-    <div class="home_container">
-      <div class="content">
-        <p class="subtitle">HELLO</p>
-        <h1 class="title">
-          I'm <span>Vetrivel<br /></span>a Web Developer
-        </h1>
-        <p class="description">
-          Welcome to my portfolio! I'm Vetrivel, a skilled and
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1 id="hero-title">Hi, I'm Vetrivel</h1>
+        <p class="hero-intro">Welcome to my portfolio! I'm Vetrivel, a skilled and
           creative web developer with a passion for creating beautiful,
-          responsive, and user-friendly websites.
-        </p>
-        <div class="section">
-          <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" class="icon-link" target="_blank"
-            rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-              class="icon">
-            Visit Instagram
-          </a>
-        </div>
-
-        <div class="section">
-          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227"
-            class="icon-link" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"
-              class="icon">
-            Visit LinkedIn
-          </a>
-        </div>
-
-        <div class="section">
-          <a href="https://github.com/vetrivel5523" class="icon-link" target="_blank"
-            rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"
-              class="icon">
-            Visit GitHub
-          </a>
-        </div>
-        <div class="action__btns">
-          <button><a class="hire__me" href="https://wa.me/+919445216046?text=Hi vetrivel"
-              class="btn btn-dark btn-lg text-uppercase">Hire Me</a></button>
+          responsive, and user-friendly websites.</p>
+        <div class="hero-buttons">
+          <a href="/ASSETS/RESUME/VETRIVEL_K_SOFTWARE ENGINEER.pdf" class="btn download-resume" download>Download
+            Resume</a>
         </div>
       </div>
-      <div class="image">
-        <img src="assets/IMAGES/Vetrivel image.jpg" alt="profile" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <div class="about_section">
-      <h2 class="section_title">About Me</h2>
-      <div class="about_container">
-        <div class="about_content">
-          <p>
-            Experienced leader skilled in guiding teams to success through clear vision and
-            motivation. Strong at teamwork, communication, and achieving shared goals. I excel in bringing
-            people together, leveraging diverse strengths for great results in any environment.
-          </p>
-        </div>
-        <div class="about_btns">
-          <button><a class="about_me" href="/assets/PDF/VETRIVEL K RESUME.pdf"
-              class="btn btn-dark btn-lg text-uppercase" download>Download
-              cv</a></button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="education_section">
-    <div class="education_container">
-      <h2 class="section_title">Education</h2>
-      <div class="education_item">
-        <div class="education_content">
-          <h3 class="education_title">SSLC (10th Grade)</h3>
-          <p class="school_name">Govt Boys Higer Secondary School,Sendhamangalam</p>
-          <p class="percentage">Percentage:74.4%</p>
-        </div>
-      </div>
-      <div class="education_item">
-        <div class="education_content">
-          <h3 class="education_title">HSC (12th Grade)</h3>
-          <p class="school_name">Bharathi Higer Secondary School,Reddipatti</p>
-          <p class="percentage">Percentage: 85.85%</p>
-        </div>
-      </div>
-      <div class="education_item">
-        <div class="education_content">
-          <h3 class="education_title">Bachelor's Degree</h3>
-          <p class="school_name">Kongunadu College of Engineering and Technology,Thottiyam</p>
-          <p class="percentage">CGPA: 7.85</p>
-        </div>
+      <div class="hero-image">
+        <img src="/ASSETS/IMAGES/Vetrivel k.png" alt="Profile Image" />
       </div>
     </div>
   </section>
 
-  <section id="skills" class="skills_section">
-    <div class="skills_container">
-      <h2 class="section_title">Skills</h2>
+  <!-- About Section -->
 
-      <!-- Programming Skills -->
-      <div class="skill_category">
-        <h3 class="category_title">Programming Skills</h3>
-
-        <!-- C -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/c-program-icon.png" alt="C Logo" class="skill_logo">
-          <h3 class="skill_name">C</h3>
-          <p class="skill_description">Experience with C programming language for system-level programming and embedded
-            systems.</p>
-        </div>
-
-        <!-- Python -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/python-programming-language-icon.png" alt="Python Logo" class="skill_logo">
-          <h3 class="skill_name">Python</h3>
-          <p class="skill_description">Proficient in Python programming for web development and data analysis.</p>
-        </div>
-
-        <!-- Java -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/java-programming-language-icon.png" alt="Java Logo" class="skill_logo">
-          <h3 class="skill_name">Java</h3>
-          <p class="skill_description">Skilled in Java programming for backend development and Android apps.</p>
-        </div>
-
+  <section id="about-me" class="about-me">
+    <div class="about-container">
+      <div class="intro">
+        <h2>About Me</h2>
+        <p>Hi! I’m Titan, a passionate web developer and designer with expertise in HTML, CSS, JavaScript, and
+          more. I enjoy creating user-centric, responsive web applications that solve real-world problems.</p>
       </div>
-
-      <!-- Web Development Skills -->
-      <div class="skill_category">
-        <h3 class="category_title">Web Development Skills</h3>
-
-        <!-- HTML -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/html-icon.png" alt="HTML Logo" class="skill_logo">
-          <h3 class="skill_name">HTML</h3>
-          <p class="skill_description">Proficient in creating semantic and accessible web pages using HTML.</p>
-        </div>
-
-        <!-- CSS -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/css-icon.png" alt="CSS Logo" class="skill_logo">
-          <h3 class="skill_name">CSS</h3>
-          <p class="skill_description">Skilled in styling web pages with CSS, including Flexbox and Grid layouts.</p>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/javascript-programming-language-icon.png" alt="JavaScript Logo" class="skill_logo">
-          <h3 class="skill_name">JavaScript</h3>
-          <p class="skill_description">Experience in developing interactive and dynamic web applications using
-            JavaScript.</p>
-        </div>
-
-        <!-- Node js -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/science.png" alt="React js Logo" class="skill_logo">
-          <h3 class="skill_name">React js</h3>
-          <p class="skill_description">React is the library for web and native user interfaces.</p>
-        </div>
-        <!-- Bootstrap -->
-        <div class="skill_card">
-          <img src="assets/IMAGES/bootstrap-5-logo-icon.png" alt="Bootstrap Logo" class="skill_logo">
-          <h3 class="skill_name">Bootstrap</h3>
-          <p class="skill_description">Proficient in using Bootstrap framework for responsive web design and
-            development.</p>
-        </div>
-
-        <!-- Github -->
-        <div class="skill_card">
-          <img src="assets/IMAGEs/github-icon.png" alt="Bootstrap Logo" class="skill_logo">
-          <h3 class="skill_name">Github</h3>
-          <p class="skill_description">GitHub is a developer platform that allows developers to create, store, manage
-            and share their code.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="projects" class="projects_section">
-    <div class="projects_container">
-      <h2 class="section_title">Projects</h2>
-
-      <!-- Project Cards -->
-      <div class="project_card">
-        <br>
-        <img src="assets/IMAGES/PROJECT/Manual Mode Screen Controller.jpg" alt="Project 1 Image" class="project_image">
-        <div class="project_info">
-          <h3 class="project_title">Manual Mode Screen Controller Using IOT</h3>
-          <p class="project_description">A project that allows manual control of a screen through IoT
-            technology, enabling remote accessibility and convenience.</p>
-          <a href="https://github.com/vetrivel5523/Manual-mode-screen-controller" class="project_link">View Code <i
-              class="fas fa-chevron-right"></i></a>
-        </div>
-      </div>
-
-      <div class="project_card">
-        <br>
-        <img src="assets/IMAGES/PROJECT/Smart Voting System.png" alt="Project 2 Image" class="project_image">
-        <div class="project_info">
-          <h3 class="project_title">Real Time Image Based Smart Voting System Using Python</h3>
-          <p class="project_description">An innovative voting system that uses real-time image processing
-            and Python to ensure secure and efficient voting.</p>
-          <a href="https://github.com/vetrivel5523/Realtime-image-based-smart-voting-system" class="project_link">View
-            Code<i class="fas fa-chevron-right"></i></a>
-        </div>
-      </div>
-
-      <div class="project_card">
-        <br>
-        <img src="assets/IMAGES/PROJECT/Calsi.png" alt="Project 3 Image" class="project_image">
-        <div class="project_info">
-          <h3 class="project_title">Calculator Using HTML, CSS, JavaScript</h3>
-          <p class="project_description">A simple yet functional calculator built with HTML, CSS, and
-            JavaScript, featuring basic arithmetic operations.</p>
-          <a href="https://vetricalsi.netlify.app/" class="project_link">View Project<i
-              class="fas fa-chevron-right"></i></a>
-        </div>
-      </div>
-
-      <div class="project_card">
-        <br>
-        <img src="assets/IMAGES/PROJECT/Protfolio.png" alt="Project 4 Image" class="project_image">
-        <div class="project_info">
-          <h3 class="project_title">Portfolio Website Using HTML, CSS,JAVASCRIPT</h3>
-          <p class="project_description">A personal portfolio website designed with HTML, CSS, and Bootstrap
-            to showcase projects and skills.</p>
-          <a href="https://vetri.netlify.app/" class="project_link">View Project <i
-              class="fas fa-chevron-right"></i></a>
-        </div>
-      </div>
-
-      <div class="project_card">
-        <br>
-        <img src="assets/IMAGES/PROJECT/beauty.webp" alt="Project 5 Image" class="project_image">
-        <div class="project_info">
-          <h3 class="project_title">Beautician Website Using HTML, CSS,JAVASCRIPT</h3>
-          <p class="project_description">A professional website for a beautician, created using HTML, CSS,
-            and Bootstrap to highlight services and portfolio.</p>
-          <a href="https://kavibeautician.netlify.app/" class="project_link">View Project <i
-              class="fas fa-chevron-right"></i></a>
-        </div>
-      </div>
-      <div class="project_card"></div>
-      <br>
-      <img src="assets/IMAGES/PROJECT/CGPA & SGPA.png" alt="Project 6 Image" class="project_image">
-      <div class="project_info">
-        <h3 class="project_title">KNCET CGPA & SGPA Calculating Website Using HTML, CSS,JAVASCRIPT</h3>
-        <p class="project_description">The KNCET CGPA & SGPA Calculating Website lets students input grades and credits,
-          then calculates and displays their CGPA and SGPA results. It uses HTML, CSS, and JavaScript for a
-          user-friendly interface, input validation, and calculation logic.</p>
-        <a href="https://knceteducalsi.netlify.app/" class="project_link">View Project <i
-            class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
     </div>
   </section>
 
 
-  <section id="Contact" class="bg-light text-dark skills-padding text-center">
-    <h2 class="section_title">Contact</h2>
-    <div class="container">
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+
+    <!-- Top Skills -->
+    <div class="skills-category">
+      <h3>Top Skills</h3>
       <div class="row">
-        <div class="col-md-12">
-          <form action="https://formspree.io/f/xnqeaeea" method="POST">
-            <div>
-              <label for="name">Name:</label><br>
-              <input type="text" id="name" name="name" required><br><br>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-html5 card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">HTML</h4>
             </div>
-            <div>
-              <label for="email">Email:</label><br>
-              <input type="email" id="email" name="email" required><br><br>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-css3-alt card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">CSS</h4>
             </div>
-            <div>
-              <label for="message">Message:</label><br>
-              <textarea id="message" name="message" rows="2" required></textarea><br><br>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-js card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">JavaScript</h4>
             </div>
-            <div class="smt">
-              <input type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming Skills -->
+    <div class="skills-category">
+      <h3>Programming Skills</h3>
+      <div class="row">
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-react card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">React</h4>
             </div>
-          </form>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-python card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">Python</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-bootstrap card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">Bootstrap</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology Skills -->
+    <div class="skills-category">
+      <h3>Technology Skills</h3>
+      <div class="row">
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-github card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">GitHub</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fab fa-node-js card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">Node.js</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fas fa-server card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">APIs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 skill-item">
+          <div class="card">
+            <i class="fas fa-table card-img-top"></i>
+            <div class="card-body">
+              <h4 class="card-title">MS Excel</h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
 
-  <section>
 
-    <br>
-    <br>
-    <br>
-    <br>
+  <!-- Project Section -->
+  <section id="projects" class="projects-section">
+    <h2>My Projects</h2>
 
-    <footer>
+    <!-- Freelance Projects -->
+    <div class="category-title">
+      <h3>Freelance Projects</h3>
+    </div>
+    <div class="projects-container">
+      <div class="project-card freelance">
+        <img src="/ASSETS/IMAGES/PROJECTS/Beautician.png" alt="Project 1" class="project-image" />
+        <div class="project-info">
+          <h4>Freelance Project 1</h4>
+          <p>A professional website for a beautician, created using HTML, CSS,
+            and Bootstrap to highlight services and portfolio</p>
+          <div class="project-links">
+            <a href="https://kavibeautician.netlify.app/" target="_blank" class="btn">Live Demo</a>
+            <!-- <a href="https://github.com/username/project1" target="_blank" class="btn">GitHub</a> -->
+          </div>
+        </div>
+      </div>
 
-      <p>Copyright: 2024 Designed and Developed by Vetrivel Kumarasamy</p>
-    </footer>
+      <!-- More freelance projects here -->
+    </div>
 
+    <!-- Personal Projects -->
+    <div class="category-title">
+      <h3>Personal Projects</h3>
+    </div>
+    <div class="projects-container">
+      <div class="project-card personal">
+        <img src="/ASSETS/IMAGES/PROJECTS/Calculator.png" alt="Project 2" class="project-image" />
+        <div class="project-info">
+          <h4>Arithmetic Calculator</h4>
+          <p>A simple yet functional calculator built with HTML, CSS, and
+            JavaScript, featuring basic arithmetic operations.</p>
+          <div class="project-links">
+            <a href="https://vetricalsi.netlify.app/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/vetrivel5523/simple-calculator" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card personal">
+        <img src="/ASSETS/IMAGES/PROJECTS/CGPA & SGPA.png" alt="Project 2" class="project-image" />
+        <div class="project-info">
+          <h4>KNCET CGPA & SGPA Calculator</h4>
+          <p>The Website lets students input grades and credits,
+            then calculates and displays their CGPA and SGPA results.</p>
+          <div class="project-links">
+            <a href="https://knceteducalsi.netlify.app/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/vetrivel5523/KNCET-SGPA-CGPA-COMPILATION-TOOL" target="_blank"
+              class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card personal">
+        <img src="/ASSETS/IMAGES/PROJECTS/Portfolio.png" alt="Project 2" class="project-image" />
+        <div class="project-info">
+          <h4>Personal Portfolio</h4>
+          <p>A personal portfolio website designed with HTML, CSS, and Bootstrap
+            to showcase projects and skills.</p>
+          <div class="project-links">
+            <a href="https://vetri.netlify.app/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/vetrivel5523/Vetrivel-portfolio" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- More personal projects here -->
+    </div>
+
+    <!-- Academic Projects -->
+    <div class="category-title">
+      <h3>Academic Projects</h3>
+    </div>
+    <div class="projects-container">
+      <div class="project-card academic">
+        <img src="/ASSETS/IMAGES/PROJECTS/Manual Mode Screen Controller.jpg" alt="Project 3" class="project-image" />
+        <div class="project-info">
+          <h4>Manual Mode Screen Controller Using IOT</h4>
+          <p>A project that allows manual control of a screen through IoT
+            technology, enabling remote accessibility and convenience.</p>
+          <div class="project-links">
+            <a href="https://github.com/vetrivel5523/Manual-mode-screen-controller" target="_blank"
+              class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card academic">
+        <img src="/ASSETS/IMAGES/PROJECTS/Smart Voting System.png" alt="Project 3" class="project-image" />
+        <div class="project-info">
+          <h4>Real Time Image Based Smart Voting System Using Python</h4>
+          <p>An innovative voting system that uses real-time image processing
+            and Python to ensure secure and efficient voting.</p>
+          <div class="project-links">
+            <a href="https://github.com/vetrivel5523/Realtime-image-based-smart-voting-system" target="_blank"
+              class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- More academic projects here -->
+    </div>
   </section>
 
 
-  <!-- Back to top arrow -->
-  <button href="#top" class="back-to-top" title="Back to Top">&uarr;</button>
-  <!-- JavaScript to show/hide back to top arrow -->
+  <!-- My Resume Section -->
+  <section id="resume" class="resume-section">
+    <h2>My Resume</h2>
+    <div class="timeline">
+      <!-- Education Timeline -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Education</h3>
+          <p class="date">Graduated: 2019</p>
+          <p>SSLC - Government boys higher Secondary school</p>
+          <p>Description: Completed SSLC with a percentage of 74.4%, showcasing a strong foundation in
+            core subjects and a commitment to academic excellence.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Education</h3>
+          <p class="date">Graduated: 2021</p>
+          <p>HSC - Bharathi higher secondary school</p>
+          <p>Description: Completed HSC with a percentage of 85.85%, demonstrating strong academic performance
+            and a solid understanding of key subject.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Education</h3>
+          <p class="date">Graduated: 2025</p>
+          <p>BE-ECE at Kongunadu college of engineering and technology</p>
+          <p>Description: Pursuing a Bachelor of Engineering in Electronics and Communication (BE-ECE) with a
+            current CGPA of 7.85 until the 7th semester.</p>
+        </div>
+      </div>
+
+
+      <!-- Experience Timeline -->
+      <!-- <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Experience</h3>
+                    <p class="date">June 2021 - Present</p>
+                    <p>Junior Web Developer - ABC Company</p>
+                    <p>Description: Developed and maintained websites, focusing on frontend and backend integration,
+                        with technologies like React, Node.js, and MongoDB.</p>
+                </div>
+            </div> -->
+
+      <!-- Add more entries as needed -->
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/xnqeaeea" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" value="Submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <p><strong>Email:</strong>vetri552003@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9445216046</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" class="social-icon"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/vetrivel5523" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" class="social-icon"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>Vetrivel K</h1>
+        <p>Crafted with passion & dedication</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" class="social-icon"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/vetrivel5523" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" class="social-icon"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vetrivel K. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
   <script>
-    window.addEventListener('scroll', function () {
-      var arrow = document.querySelector('.back-to-top');
-      if (window.scrollY > 200) {
-        arrow.style.display = 'block';
-      } else {
-        arrow.style.display = 'none';
-      }
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+      alert("Right-click is disabled on this page.");
     });
 
-    // Smooth scrolling to top
-    document.querySelector('.back-to-top').addEventListener('click', function (e) {
+    // Disable F12 (Developer Tools)
+    document.onkeydown = function (e) {
+      if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) { // F12 or Ctrl+Shift+I
+        e.preventDefault();
+        alert("Developer Tools (F12) are disabled.");
+      }
+    };
+
+    // Disable text selection
+    document.addEventListener('selectstart', function (e) {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Prevent copying via Ctrl+C, Ctrl+X, and Ctrl+V
+    document.onkeydown = function (e) {
+      if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 88 || e.keyCode === 86)) { // Ctrl+C, Ctrl+X, Ctrl+V
+        e.preventDefault();
+        alert("Copying, cutting, and pasting are disabled on this page.");
+      }
+    };
+
+    // Disable dragging images and text
+    document.addEventListener('dragstart', function (e) {
+      e.preventDefault();
     });
   </script>
+
+
+
+  <script src="/ASSETS/script.js"></script>
 </body>
 
 </html>
