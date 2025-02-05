@@ -423,8 +423,10 @@
   <script>
     // Wait until the page is fully loaded
     window.addEventListener('load', function () {
-      // Hide the preloader
-      document.getElementById('preloader').style.display = 'none';
+      // Set a timeout to hide the preloader after 3 seconds
+      setTimeout(function () {
+        document.getElementById('preloader').style.display = 'none'; // Hide the preloader
+      }, 3000); // 3000ms = 3 seconds
     });
   </script>
 
