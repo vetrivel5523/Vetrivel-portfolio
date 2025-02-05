@@ -117,6 +117,26 @@ header {
     }
 }
 
+/* Active state for mobile nav links */
+.nav-links.active {
+    display: flex !important;
+}
+
+.burger.active .line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.burger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -8px;
+}
+
+
 /*------------------ Hero section ------------------*/
 
 .hero-section {

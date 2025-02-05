@@ -409,47 +409,12 @@
   </footer>
 
 
-  <script>
-    // Disable right-click
-    document.addEventListener('contextmenu', function (e) {
-      e.preventDefault();
-      alert("Right-click is disabled on this page.");
-    });
-
-    // Disable F12 (Developer Tools)
-    document.onkeydown = function (e) {
-      if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) { // F12 or Ctrl+Shift+I
-        e.preventDefault();
-        alert("Developer Tools (F12) are disabled.");
-      }
-    };
-
-    // Disable text selection
-    document.addEventListener('selectstart', function (e) {
-      e.preventDefault();
-    });
-
-    // Prevent copying via Ctrl+C, Ctrl+X, and Ctrl+V
-    document.onkeydown = function (e) {
-      if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 88 || e.keyCode === 86)) { // Ctrl+C, Ctrl+X, Ctrl+V
-        e.preventDefault();
-        alert("Copying, cutting, and pasting are disabled on this page.");
-      }
-    };
-
-    // Disable dragging images and text
-    document.addEventListener('dragstart', function (e) {
-      e.preventDefault();
-    });
-  </script>
-
-
-
   <script src="/ASSETS/script.js"></script>
   <!-- Back to Top Button -->
   <a href="#" id="back-to-top" title="Back to Top">
     <i class="fas fa-arrow-up"></i>
   </a>
+
 
   <script>
     // Show the "Back to Top" button when scrolling down
