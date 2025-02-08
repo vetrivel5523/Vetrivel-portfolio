@@ -1,6 +1,4 @@
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const heroTitle = document.getElementById('hero-title');
     setTimeout(function () {
