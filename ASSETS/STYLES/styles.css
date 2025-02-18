@@ -60,19 +60,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     position: relative;
     width: 100%;
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 100px;
     /* Adjust as needed */
 }
 
 .logo-img {
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 
@@ -83,11 +83,15 @@ header {
 }
 
 .nav-links li {
+    display: flex;
+    align-items: center;
     padding: 5px 10px;
     position: relative;
 }
 
 .nav-links a {
+    display: flex;
+    align-items: center;
     color: #333;
     text-decoration: none;
     font-size: 18px;
@@ -105,11 +109,12 @@ header {
     display: none;
     cursor: pointer;
     flex-direction: column;
+    padding-right: 10px;
     gap: 5px;
 }
 
 .burger .line {
-    width: 25px;
+    width: 20px;
     height: 3px;
     background-color: #333;
     transition: all 0.3s ease;
