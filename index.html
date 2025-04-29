@@ -39,6 +39,7 @@
         <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
         <li><a href="#Certificate" onclick="closeMenu()">Certifications</a></li>
         <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#Experiences" onclick="closeMenu()">Experience</a></li>
         <li><a href="#Education" onclick="closeMenu()">Education</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
@@ -133,10 +134,10 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
-    
+
 
     <!-- Programming Skills -->
     <div class="skills-category">
@@ -231,7 +232,8 @@
           <div class="back">
             <h3>IT Specialist -Python</h3>
             <p>Issued by: Certiport</p>
-            <a href="https://www.credly.com/badges/55fcfc2c-0558-4e4d-b99e-8ef973b2842c/linked_in_profile" target="_blank">View Certificate</a>
+            <a href="https://www.credly.com/badges/55fcfc2c-0558-4e4d-b99e-8ef973b2842c/linked_in_profile"
+              target="_blank">View Certificate</a>
           </div>
         </div>
       </div>
@@ -255,7 +257,8 @@
           <div class="back">
             <h3>Build An AI Chatbot With Python</h3>
             <p>Issued by: SkillEcted</p>
-            <a href="https://www.skillected.com/share-certificate?serialno=ZBQFNOU8" target="_blank">View Certificate</a>
+            <a href="https://www.skillected.com/share-certificate?serialno=ZBQFNOU8" target="_blank">View
+              Certificate</a>
           </div>
         </div>
       </div>
@@ -268,15 +271,15 @@
           <div class="back">
             <h3>Digital Marketing</h3>
             <p>Issued by: Google</p>
-            <a href="https://skillshop.exceedlms.com/student/award/jNFQFGfr7HPKA6SkDnm5MEvM" target="_blank">View Certificate</a>
+            <a href="https://skillshop.exceedlms.com/student/award/jNFQFGfr7HPKA6SkDnm5MEvM" target="_blank">View
+              Certificate</a>
           </div>
         </div>
       </div>
       <div class="certificate">
         <div class="inner">
           <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Wipro_Certificate.png"
-              alt="Wipro Certificate">
+            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Wipro_Certificate.png" alt="Wipro Certificate">
           </div>
           <div class="back">
             <h3>Java FullStack Development</h3>
@@ -411,42 +414,109 @@
   </section>
 
 
+  <!-- Experience Section     -->
+  <section id="Experiences" class="experience-section">
+    <h2 class="section-title">Experience</h2>
+    <div class="Extimeline">
+      <div class="entry">
+        <div class="dot"></div>
+        <div class="Excontent">
+          <h3>Web Developer Intern</h3>
+          <span>Jan 2025 – Feb 2025 | KarthiKesh Robotics Private Limited</span>
+          <p>Developed responsive websites using HTML, CSS, and JS. Added animations and improved UI/UX.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="dot"></div>
+        <div class="Excontent">
+          <h3>Freelance Web Developer</h3>
+          <span>May 2024 – Aug 2024 | Beauty Parlor Website</span>
+          <p>Building modern landing pages and web apps with HTML, CSS, and JS.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="dot"></div>
+        <div class="Excontent">
+          <h3>Web Developer Intern</h3>
+          <span>Feb 2023 – Mar 2023 | Skynoveau Technology Private Limited</span>
+          <p>Developed responsive websites using HTML, CSS, and JS , Added animations, improved UI/UX and Building
+            modern landing pages and web apps with React and Tailwind CSS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const entries = document.querySelectorAll('.entry');
+    const observer = new IntersectionObserver(entriesList => {
+      entriesList.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    entries.forEach(entry => observer.observe(entry));
+  </script>
+
+  <!-- Certificates Grid -->
+  <section id="Experiences" class="experience-section">
+    <h2 class="section-title">Internship Certificate</h2>
+    <div class="certificate-grid" id="certificateGrid">
+      <div class="certificate-card">
+        <img src="/ASSETS/IMAGES/INTERNSHIP/sky1.png" alt="Certificate 1" />
+        <h3>Web Development Internship</h3>
+      </div>
+      <div class="certificate-card">
+        <img src="/ASSETS/IMAGES/INTERNSHIP/kar.jpeg" alt="Certificate 2" />
+        <h3>Web Development Internship</h3>
+      </div>
+      <!-- <div class="certificate-card">
+      <img src="/ASSETS/IMAGES/INTERNSHIP/PRO.png" alt="Certificate 3" />
+      <h3>Web Development Internship</h3>
+    </div> -->
+    </div>
+  </section>
+
+
   <!-- My Resume Section -->
-<section id="education" class="education-section">
-  <h2 class="section-title">Education</h2>
-  <div class="timeline">
-    <!-- Timeline Item -->
-    <div class="timeline-item">
-      <div class="timeline-icon">🎓</div>
-      <div class="timeline-content">
-        <h3>SSLC</h3>
-        <span class="timeline-date">Graduated: 2019</span>
-        <p class="school-name">Government Boys Higher Secondary School</p>
-        <p class="description">Completed SSLC with 74.4%, showcasing a strong foundation in core subjects and commitment to academic excellence.</p>
+  <section id="education" class="education-section">
+    <h2 class="section-title">Education</h2>
+    <div class="Etimeline">
+      <!-- Timeline Item -->
+      <div class="timeline-item">
+        <div class="timeline-icon">🎓</div>
+        <div class="timeline-content">
+          <h3>SSLC</h3>
+          <span class="timeline-date">Graduated: 2019</span>
+          <p class="school-name">Government Boys Higher Secondary School</p>
+          <p class="description">Completed SSLC with 74.4%, showcasing a strong foundation in core subjects and
+            commitment to academic excellence.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-icon">🎓</div>
-      <div class="timeline-content">
-        <h3>HSC</h3>
-        <span class="timeline-date">Graduated: 2021</span>
-        <p class="school-name">Bharathi Higher Secondary School</p>
-        <p class="description">Completed HSC with 85.85%, demonstrating strong academic performance and a solid understanding of key subjects.</p>
+      <div class="timeline-item">
+        <div class="timeline-icon">🎓</div>
+        <div class="timeline-content">
+          <h3>HSC</h3>
+          <span class="timeline-date">Graduated: 2021</span>
+          <p class="school-name">Bharathi Higher Secondary School</p>
+          <p class="description">Completed HSC with 85.85%, demonstrating strong academic performance and a solid
+            understanding of key subjects.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="timeline-icon">🎓</div>
-      <div class="timeline-content">
-        <h3>BE - ECE</h3>
-        <span class="timeline-date">Expected Graduation: 2025</span>
-        <p class="school-name">Kongunadu College of Engineering and Technology</p>
-        <p class="description">Pursuing Bachelor of Engineering in Electronics and Communication (BE-ECE) with a current CGPA of 7.85.</p>
+      <div class="timeline-item">
+        <div class="timeline-icon">🎓</div>
+        <div class="timeline-content">
+          <h3>BE - ECE</h3>
+          <span class="timeline-date">Expected Graduation: 2025</span>
+          <p class="school-name">Kongunadu College of Engineering and Technology</p>
+          <p class="description">Pursuing Bachelor of Engineering in Electronics and Communication (BE-ECE) with a
+            current CGPA of 7.85.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Contact Section -->
@@ -498,8 +568,8 @@
       <div class="footer-social">
         <h4>Follow Me</h4>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" class="social-icon"><i
-              class="fab fa-linkedin"></i> linkedin</a>
+          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" class="social-icon"><i class="fab fa-linkedin"></i>
+            linkedin</a>
           <a href="https://github.com/vetrivel5523" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
           <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" class="social-icon"><i
               class="fab fa-instagram"></i> Instagram</a>
