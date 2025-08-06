@@ -2,641 +2,545 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vetrivel Portfolio</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Roboto:wght@400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Vetrivel K Portfolio - Creative Web Developer & Data Analyst. Open to UK Jobs via Youth Mobility Visa." />
+  <meta name="author" content="Vetrivel K" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+  <title>Vetrivel K – Portfolio</title>
   <link rel="stylesheet" href="/ASSETS/STYLES/styles.css">
-  <link rel="icon" type="image/png" href="/ASSETS/IMAGES/LOGO/vetri_logo.png">
-
 </head>
 
-<div id="preloader">
-  <div class="spinner"></div>
-</div>
+<!-- Default to DARK mode -->
 
+<body class="dark-mode">
 
-<body>
+  <!-- 🔥 Fullscreen Intro Overlay -->
+  <div class="intro-overlay">
+    Welcome! I’m Vetrivel — let’s create something amazing.
+  </div>
 
+  <!-- 🧭 NAVBAR -->
   <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="ASSETS/IMAGES/LOGO/vetri_logo.png" alt="Vetrivel K Logo" class="logo-img">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home" onclick="closeMenu()">Home</a></li>
-        <li><a href="#about-me" onclick="closeMenu()">About Me</a></li>
-        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-        <li><a href="#Certificate" onclick="closeMenu()">Certifications</a></li>
-        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-        <li><a href="#Experiences" onclick="closeMenu()">Experience</a></li>
-        <li><a href="#Education" onclick="closeMenu()">Education</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-      </ul>
-      <div class="burger" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </header>
-
-
-
-  <!-- Hero Section -->
-  <section class="hero-section" id="home">
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1 id="hero-title">Hi, I'm Vetrivel</h1>
-        <p class="hero-intro">Welcome to my portfolio! I'm Vetrivel, a skilled and
-          creative web developer with a passion for creating beautiful,
-          responsive, and user-friendly websites.</p>
-        <div class="hero-buttons">
-          <a href="/ASSETS/RESUME/Vetrivel_K_Web_Developer.pdf" class="btn download-resume" download>Download
-            Resume</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="/ASSETS/IMAGES/HERO IMG/SAVE1 copy 4.jpg" alt="Profile Image" />
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-
-  <section id="about-me" class="about-me">
-    <div class="about-container">
-      <div class="intro">
-        <h2>About Me</h2><br>
-        <p>Hi! I’m Vetrivel, a passionate web developer and designer with expertise in HTML, CSS, JavaScript, and
-          more. I enjoy creating user-centric, responsive web applications that solve real-world problems.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
-    <h2>Skills</h2><br>
-
-    <!-- Top Skills -->
-    <div class="skills-category">
-      <h3>Frontend Skills</h3>
-      <div class="row">
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-html5 card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">HTML</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-css3-alt card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">CSS</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-js card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">JavaScript</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fas fa-pencil-ruler card-img-top"></i> <!-- Icon changed to represent design -->
-            <div class="card-body">
-              <h4 class="card-title">UI/UX Design</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-bootstrap card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">Bootstrap</h4>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- Programming Skills -->
-    <div class="skills-category">
-      <h3>Programming Skills</h3>
-      <div class="row">
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-react card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">React</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-python card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">Python</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Technology Skills -->
-    <div class="skills-category">
-      <h3>Technology Skills</h3>
-      <div class="row">
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fab fa-github card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">GitHub</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fas fa-server card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">APIs</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 skill-item">
-          <div class="card">
-            <i class="fas fa-table card-img-top"></i>
-            <div class="card-body">
-              <h4 class="card-title">MS Excel</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- certificate Section -->
-
-  <section id="Certificate" class="certificate-container">
-    <h2>Certifications</h2>
-    <div class="certificates">
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Web Development Certificate.jpeg" alt="Web Development Certificate">
-          </div>
-          <div class="back">
-            <h3>Become A Certified Web Developer From Scratch.</h3>
-            <p>Issued by: Eduonix</p>
-            <a href="https://www.eduonix.com/certificate/9d19819e63" target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Frontend Coding certificate.png" alt="Frontend Coding certificate">
-          </div>
-          <div class="back">
-            <h3>Frontend Coding Championship</h3>
-            <p>Issued by: Guvi</p>
-            <a href="https://www.guvi.in/share-certificate/9Bb27w6F017713V12G" target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Microsoft python certificate.png"
-              alt="Microsoft python certificate">
-          </div>
-          <div class="back">
-            <h3>IT Specialist -Python</h3>
-            <p>Issued by: Certiport</p>
-            <a href="https://www.credly.com/badges/55fcfc2c-0558-4e4d-b99e-8ef973b2842c/linked_in_profile"
-              target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Guvi Python Certificate.png" alt="Guvi python certificate">
-          </div>
-          <div class="back">
-            <h3>Python</h3>
-            <p>Issued by: Guvi</p>
-            <a href="https://www.guvi.in/certificate?id=P962LA883w1j8J07ig" target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/AI chatBot Python.png" alt="python Ai Chat bot certificate">
-          </div>
-          <div class="back">
-            <h3>Build An AI Chatbot With Python</h3>
-            <p>Issued by: SkillEcted</p>
-            <a href="https://www.skillected.com/share-certificate?serialno=ZBQFNOU8" target="_blank">View
-              Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Google Digital Marketing Certificate.png"
-              alt="Google Digital Marketing Certificate">
-          </div>
-          <div class="back">
-            <h3>Digital Marketing</h3>
-            <p>Issued by: Google</p>
-            <a href="https://skillshop.exceedlms.com/student/award/jNFQFGfr7HPKA6SkDnm5MEvM" target="_blank">View
-              Certificate</a>
-          </div>
-        </div>
-      </div>
-      <div class="certificate">
-        <div class="inner">
-          <div class="front">
-            <img src="/ASSETS/IMAGES/CERTIFICATIONS/Wipro_Certificate.png" alt="Wipro Certificate">
-          </div>
-          <div class="back">
-            <h3>Java FullStack Development</h3>
-            <p>Issued by: Wipro</p>
-            <a href="https://cert.diceid.com/cid/8Zo53JgCXu?verify=true" target="_blank">View Certificate</a>
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-
-  <!-- Project Section -->
-  <section id="projects" class="projects-section">
-    <h2>My Projects</h2>
-
-    <!-- Freelance Projects -->
-    <div class="category-title">
-      <h3>Freelance Projects</h3>
-    </div>
-    <div class="projects-container">
-      <div class="project-card freelance">
-        <img src="/ASSETS/IMAGES/PROJECTS/Beautician.png" alt="Project 1" class="project-image" />
-        <div class="project-info">
-          <h4>Beauty Parlor Website</h4>
-          <p>A professional website for a beautician, created using HTML, CSS,
-            and Bootstrap to highlight services and portfolio</p>
-          <div class="project-links">
-            <a href="https://2kbridalstudio.netlify.app/" target="_blank" class="btn">Live Demo</a>
-            <!-- <a href="https://github.com/username/project1" target="_blank" class="btn">GitHub</a> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- More freelance projects here -->
-    </div>
-
-    <!-- Personal Projects -->
-    <div class="category-title">
-      <h3>Personal Projects</h3>
-    </div>
-    <div class="projects-container">
-      <div class="project-card personal">
-        <img src="/ASSETS/IMAGES/PROJECTS/Calculator.png" alt="Project 2" class="project-image" />
-        <div class="project-info">
-          <h4>Arithmetic Calculator</h4>
-          <p>A simple yet functional calculator built with HTML, CSS, and
-            JavaScript, featuring basic arithmetic operations.</p>
-          <div class="project-links">
-            <a href="https://vetricalsi.netlify.app/" target="_blank" class="btn">Live Demo</a>
-            <a href="https://github.com/vetrivel5523/simple-calculator" target="_blank" class="btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card personal">
-        <img src="/ASSETS/IMAGES/PROJECTS/CGPA & SGPA.png" alt="Project 2" class="project-image" />
-        <div class="project-info">
-          <h4>KNCET CGPA & SGPA Calculator</h4>
-          <p>The Website lets students input grades and credits,
-            then calculates and displays their CGPA and SGPA results.</p>
-          <div class="project-links">
-            <a href="https://knceteducalsi.netlify.app/" target="_blank" class="btn">Live Demo</a>
-            <a href="https://github.com/vetrivel5523/KNCET-SGPA-CGPA-COMPILATION-TOOL" target="_blank"
-              class="btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card personal">
-        <img src="/ASSETS/IMAGES/PROJECTS/Portfolio.png" alt="Project 2" class="project-image" />
-        <div class="project-info">
-          <h4>Personal Portfolio</h4>
-          <p>A personal portfolio website designed with HTML, CSS, and Bootstrap
-            to showcase projects and skills.</p>
-          <div class="project-links">
-            <a href="https://vetri.netlify.app/" target="_blank" class="btn">Live Demo</a>
-            <a href="https://github.com/vetrivel5523/Vetrivel-portfolio" target="_blank" class="btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card personal">
-        <img src="/ASSETS/IMAGES/PROJECTS/Weather App.png" alt="Project 2" class="project-image" />
-        <div class="project-info">
-          <h4>Weather App</h4>
-          <p>A simple weather app built with HTML, CSS, and JavaScript that shows current weather for any city.</p>
-          <div class="project-links">
-            <a href="https://vetriweatherapp.netlify.app/" target="_blank" class="btn">Live Demo</a>
-            <a href="https://github.com/vetrivel5523/Weather_App" target="_blank" class="btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- More personal projects here -->
-    </div>
-
-    <!-- Academic Projects -->
-    <div class="category-title">
-      <h3>Academic Projects</h3>
-    </div>
-    <div class="projects-container">
-      <div class="project-card academic">
-        <img src="/ASSETS/IMAGES/PROJECTS/Manual Mode Screen Controller.jpg" alt="Project 3" class="project-image" />
-        <div class="project-info">
-          <h4>Manual Mode Screen Controller Using IOT</h4>
-          <p>A project that allows manual control of a screen through IoT
-            technology, enabling remote accessibility and convenience.</p>
-          <div class="project-links">
-            <a href="https://github.com/vetrivel5523/Manual-mode-screen-controller" target="_blank"
-              class="btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card academic">
-        <img src="/ASSETS/IMAGES/PROJECTS/Smart Voting System.png" alt="Project 3" class="project-image" />
-        <div class="project-info">
-          <h4>Real Time Image Based Smart Voting System Using Python</h4>
-          <p>An innovative voting system that uses real-time image processing
-            and Python to ensure secure and efficient voting.</p>
-          <div class="project-links">
-            <a href="https://github.com/vetrivel5523/Realtime-image-based-smart-voting-system" target="_blank"
-              class="btn">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- More academic projects here -->
-    </div>
-  </section>
-
-
-  <!-- Experience Section     -->
-  <section id="Experiences" class="experience-section">
-    <h2 class="section-title">Experience</h2>
-    <div class="Extimeline">
-      <div class="entry">
-        <div class="dot"></div>
-        <div class="Excontent">
-          <h3>Web Developer Intern</h3>
-          <span>Jan 2025 – Feb 2025 | KarthiKesh Robotics Private Limited</span>
-          <p>Developed responsive websites using HTML, CSS, and JS. Added animations and improved UI/UX.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="dot"></div>
-        <div class="Excontent">
-          <h3>Freelance Web Developer</h3>
-          <span>May 2024 – Aug 2024 | Beauty Parlor Website</span>
-          <p>Building modern landing pages and web apps with HTML, CSS, and JS.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="dot"></div>
-        <div class="Excontent">
-          <h3>Web Developer Intern</h3>
-          <span>Feb 2023 – Mar 2023 | Skynoveau Technology Private Limited</span>
-          <p>Developed responsive websites using HTML, CSS, and JS , Added animations, improved UI/UX and Building
-            modern landing pages and web apps with React and Tailwind CSS.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script>
-    const entries = document.querySelectorAll('.entry');
-    const observer = new IntersectionObserver(entriesList => {
-      entriesList.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    entries.forEach(entry => observer.observe(entry));
-  </script>
-
-  <!-- Certificates Grid -->
-  <section id="Experiences" class="experience-section">
-    <h2 class="section-title">Internship Certificate</h2>
-    <div class="certificate-grid" id="certificateGrid">
-      <div class="certificate-card">
-        <img src="/ASSETS/IMAGES/INTERNSHIP/sky1.png" alt="Certificate 1" />
-        <h3>Web Development Internship</h3>
-      </div>
-      <div class="certificate-card">
-        <img src="/ASSETS/IMAGES/INTERNSHIP/kar.jpeg" alt="Certificate 2" />
-        <h3>Web Development Internship</h3>
-      </div>
-      <!-- <div class="certificate-card">
-      <img src="/ASSETS/IMAGES/INTERNSHIP/PRO.png" alt="Certificate 3" />
-      <h3>Web Development Internship</h3>
-    </div> -->
-    </div>
-  </section>
-
-
-  <!-- My Resume Section -->
-  <section id="education" class="education-section">
-    <h2 class="section-title">Education</h2>
-    <div class="Etimeline">
-      <!-- Timeline Item -->
-      <div class="timeline-item">
-        <div class="timeline-icon">🎓</div>
-        <div class="timeline-content">
-          <h3>SSLC</h3>
-          <span class="timeline-date">Graduated: 2019</span>
-          <p class="school-name">Government Boys Higher Secondary School</p>
-          <p class="description">Completed SSLC with 74.4%, showcasing a strong foundation in core subjects and
-            commitment to academic excellence.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-icon">🎓</div>
-        <div class="timeline-content">
-          <h3>HSC</h3>
-          <span class="timeline-date">Graduated: 2021</span>
-          <p class="school-name">Bharathi Higher Secondary School</p>
-          <p class="description">Completed HSC with 85.85%, demonstrating strong academic performance and a solid
-            understanding of key subjects.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-icon">🎓</div>
-        <div class="timeline-content">
-          <h3>BE - ECE</h3>
-          <span class="timeline-date">Expected Graduation: 2025</span>
-          <p class="school-name">Kongunadu College of Engineering and Technology</p>
-          <p class="description">Pursuing Bachelor of Engineering in Electronics and Communication (BE-ECE) with a
-            current CGPA of 7.85.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-      <!-- Contact Form -->
-      <form action="https://formspree.io/f/xnqeaeea" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" value="Submit" class="btn">Send Message</button>
-      </form>
-
-      <!-- Contact Information -->
-      <div class="contact-info">
-        <p><strong>Email:</strong> vetri552003@gmail.com</p>
-        <p><strong>Phone:</strong> +91 9445216046</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" class="social-icon"><i
-              class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/vetrivel5523" class="social-icon"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" class="social-icon"><i
-              class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <h1>Vetrivel K</h1>
-        <p>Crafted with passion & dedication</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
+    <div class="nav-container">
+      <div class="logo">Vetrivel K</div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button id="themeToggle" class="toggle-mode">☀️</button>
         </ul>
-      </div>
-      <div class="footer-social">
-        <h4>Follow Me</h4>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" class="social-icon"><i class="fab fa-linkedin"></i>
-            linkedin</a>
-          <a href="https://github.com/vetrivel5523" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" class="social-icon"><i
-              class="fab fa-instagram"></i> Instagram</a>
+        <div class="menu-icon" id="menuToggle">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📌 SECTIONS -->
+  <main>
+    <section id="home" class="section hero-full">
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="highlight">Vetrivel K</span></h1><br>
+          <h2 id="typingText">Open to UK Job Opportunities 🇬🇧</h2><br>
+          <p>
+            Passionate web developer and data analyst from Tamil Nadu, India – actively seeking job
+            opportunities in the UK under Youth Mobility Visa.
+          </p>
+
+          <!-- Buttons -->
+          <div class="hero-buttons">
+            <a href="/ASSETS/" download>Download CV</a>
+            <a href="#contact" class="outline">Let’s Connect</a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/vetrivel-k-45b700227" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/vetrivel5523" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk" target="_blank"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="hero-image-wrapper">
+          <img src="ASSETS/IMAGES/HERO IMG/Vetrivel k.png" alt="Vetrivel K" class="hero-image" />
         </div>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Vetrivel K. All Rights Reserved.</p>
-    </div>
-  </footer>
+    </section>
 
 
-  <script src="/ASSETS/script.js"></script>
-  <!-- Back to Top Button -->
-  <a href="#" id="back-to-top" title="Back to Top">
-    <i class="fas fa-arrow-up"></i>
-  </a>
+    <section id="about" class="section about-unique">
+      <div class="container">
+        <div class="about-intro">
+          <h2>Get to Know <span class="highlight">Me</span></h2>
+          <p>A quick glance into who I am</p>
+        </div>
 
-  <script>
-    // Wait until the page is fully loaded
-    window.addEventListener('load', function () {
-      // Set a timeout to hide the preloader after 3 seconds
-      setTimeout(function () {
-        document.getElementById('preloader').style.display = 'none'; // Hide the preloader
-      }, 3000); // 3000ms = 3 seconds
-    });
-  </script>
+        <div class="about-card">
+          <div class="about-left">
+            <img src="/ASSETS/IMAGES/HERO IMG/SAVE1 copy 4.jpg" alt="Vetrivel K" class="about-avatar" />
+          </div>
+
+          <div class="about-right">
+            <h3 class="about-title">I’m <span class="highlight">Vetrivel K</span></h3>
+            <p class="about-description">
+              Passionate UI/UX designer & front-end developer from Tamil Nadu. I create seamless,
+              accessible web experiences that connect people and technology with empathy and clarity.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-card">
+                <i class="fas fa-birthday-cake"></i>
+                <div>
+                  <h4>Date of Birth</h4>
+                  <p>05 May 2003</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Namakkal, Tamil Nadu</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:vetri552003@gmail.com">vetri552003@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 94452 16046</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <h4>Website</h4>
+                  <p><a href="https://vetri.netlify.app" target="_blank">vetri.netlify.app</a></p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-user-check"></i>
+                <div>
+                  <h4>Freelance</h4>
+                  <p>Available</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-language"></i>
+                <div>
+                  <h4>Languages</h4>
+                  <p>English, Tamil</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p>B.E. in ECE, KNCET</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="skills-heading">
+          <h2>Skills & <span class="highlight">Tools I Work With</span></h2>
+          <p>My technical stack and soft skills that power up my projects</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Web Development Skills -->
+          <div class="skill-box">
+            <h3>Web Development</h3>
+            <div class="skill-bar"><span>HTML</span>
+              <div class="bar">
+                <div class="progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar"><span>CSS</span>
+              <div class="bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar"><span>JavaScript</span>
+              <div class="bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-bar"><span>Git & GitHub</span>
+              <div class="bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Analytics Skills -->
+          <div class="skill-box">
+            <h3>Data Analytics</h3>
+            <div class="skill-bar"><span>Excel</span>
+              <div class="bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar"><span>Python</span>
+              <div class="bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar"><span>Data Viz</span>
+              <div class="bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills & Tools -->
+          <div class="skill-box">
+            <h3>Tools & Soft Skills</h3>
+            <div class="pills">
+              <span class="pill">VS Code</span>
+              <span class="pill">Responsive Design</span>
+              <span class="pill">Problem Solving</span>
+              <span class="pill">Time Management</span>
+              <span class="pill">Teamwork</span>
+              <span class="pill">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="projects-heading">
+          <h2>My <span class="highlight">Projects</span></h2>
+          <p>Browse by category to see what I've built with passion.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+          <button class="filter-btn" onclick="filterProjects('freelance')">Freelance Project</button>
+          <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+          <button class="filter-btn" onclick="filterProjects('data')">Data Analytics</button>
+          <!-- <button class="filter-btn" onclick="filterProjects('ap')">Academic Projects</button> -->
+
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid">
+          <!-- Project Card: Freelance -->
+          <div class="project-card" data-category="freelance">
+            <div class="project-image"><img src="/ASSETS/IMAGES/PROJECTS/Beautician.png" alt="Ludo Game" />
+            </div>
+            <div class="project-content">
+              <h3>Beauty Parlor Freelance Project</h3>
+              <p>A professional website for a beautician, created using HTML, CSS,
+                and Javascript to highlight services and portfolio</p>
+              <span class="project-tech">HTML • CSS • JavaScript</span>
+              <a href="https://2kbridalstudio.netlify.app/" class="project-btn" target="_blank">View</a>
+            </div>
+          </div>
+
+          <!-- Project Card: Web -->
+          <div class="project-card" data-category="web">
+            <div class="project-image"><img src="/ASSETS/IMAGES/PROJECTS/Calculator.png" alt="Ludo Game" />
+            </div>
+            <div class="project-content">
+              <h3>Arithmetic Calculator</h3>
+              <p>A simple yet functional calculator built with HTML, CSS, and
+                JavaScript, featuring basic arithmetic operations.</p>
+              <span class="project-tech">HTML • CSS • JavaScript</span>
+              <a href="https://vetricalsi.netlify.app/" class="project-btn" target="_blank">View</a>
+              <a href="https://github.com/vetrivel5523/simple-calculator" target="_blank" class="project-btn">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web">
+            <div class="project-image"><img src="/ASSETS/IMAGES/PROJECTS/CGPA & SGPA.png" alt="Ludo Game" />
+            </div>
+            <div class="project-content">
+              <h3>KNCET CGPA & SGPA Calculator</h3>
+              <p>The Website lets students input grades and credits,
+                then calculates and displays their CGPA and SGPA results.</p>
+              <span class="project-tech">HTML • CSS • JavaScript</span>
+              <a href="https://knceteducalsi.netlify.app/" class="project-btn" target="_blank">View</a>
+              <a href="https://github.com/vetrivel5523/KNCET-SGPA-CGPA-COMPILATION-TOOL" target="_blank"
+                class="project-btn">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web">
+            <div class="project-image"><img src="/ASSETS/IMAGES/PROJECTS/Weather App.png" alt="Ludo Game" />
+            </div>
+            <div class="project-content">
+              <h3>Weather App</h3>
+              <p>A simple weather app built with HTML, CSS, and JavaScript that shows current weather for any city.</p>
+              <span class="project-tech">HTML • CSS • JavaScript • API</span>
+              <a href="https://knceteducalsi.netlify.app/" class="project-btn" target="_blank">View</a>
+              <a href="https://github.com/vetrivel5523/KNCET-SGPA-CGPA-COMPILATION-TOOL" target="_blank"
+                class="project-btn">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project Card: Data -->
+          <div class="project-card" data-category="data">
+            <div class="project-image"><img src="/ASSETS/IMAGES/PROJECTS/Exceldashboard.png" alt="Data Tool" />
+            </div>
+            <div class="project-content">
+              <h3>Excel Data Analyzer</h3>
+              <p>Large-scale visual analysis using Excel.</p>
+              <span class="project-tech">Excel • Charts</span>
+              <a href="#" class="project-btn" target="_blank">View</a>
+            </div>
+          </div>
+
+          <!-- <div class="project-card" data-category="data">
+            <div class="project-image"><img src="/IMAGES/SAVE1 copy 4.jpg" alt="Data Tool" />
+            </div>
+            <div class="project-content">
+              <h3>Excel Data Analyzer</h3>
+              <p>Large-scale visual analysis using Python + Excel.</p>
+              <span class="project-tech">Python • Excel • Charts</span>
+              <a href="#" class="project-btn" target="_blank">View</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="data">
+            <div class="project-image"><img src="/IMAGES/SAVE1 copy 4.jpg" alt="Data Tool" />
+            </div>
+            <div class="project-content">
+              <h3>Excel Data Analyzer</h3>
+              <p>Large-scale visual analysis using Python + Excel.</p>
+              <span class="project-tech">Python • Excel • Charts</span>
+              <a href="#" class="project-btn" target="_blank">View</a>
+            </div>
+          </div> -->
+
+          <!-- Project Card: Academic projects -->
+
+          <!-- <div class="project-card" data-category="ap">
+            <div class="project-image"><img src="/IMAGES/SAVE1 copy 4.jpg" alt="Data Tool" />
+            </div>
+            <div class="project-content">
+              <h3>Excel Data Analyzer</h3>
+              <p>Large-scale visual analysis using Python + Excel.</p>
+              <span class="project-tech">Python • Excel • Charts</span>
+              <a href="#" class="project-btn" target="_blank">View</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ap">
+            <div class="project-image"><img src="/IMAGES/SAVE1 copy 4.jpg" alt="Data Tool" />
+            </div>
+            <div class="project-content">
+              <h3>Excel Data Analyzer</h3>
+              <p>Large-scale visual analysis using Python + Excel.</p>
+              <span class="project-tech">Python • Excel • Charts</span>
+              <a href="#" class="project-btn" target="_blank">View</a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ap">
+            <div class="project-image"><img src="/IMAGES/SAVE1 copy 4.jpg" alt="Data Tool" />
+            </div>
+            <div class="project-content">
+              <h3>Excel Data Analyzer</h3>
+              <p>Large-scale visual analysis using Python + Excel.</p>
+              <span class="project-tech">Python • Excel • Charts</span>
+              <a href="#" class="project-btn" target="_blank">View</a>
+            </div>
+          </div> -->
 
 
-  <script>
-    // Function to toggle the mobile menu
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      const burger = document.querySelector('.burger');
-      navLinks.classList.toggle('active'); // Toggle the active class on the nav-links
-      burger.classList.toggle('active');   // Toggle the active class on the burger
-    }
+        </div>
+      </div>
+    </section>
+    <section id="certificate" class="section certificate-section">
+      <div class="cert-heading">
+        <h2><span class="highlight">My</span> Certifications</h2>
+        <p>Explore some of the certifications I've earned from top platforms and institutions.</p>
+      </div>
 
-    // Function to close the menu (in case of clicking on a nav link)
-    function closeMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      const burger = document.querySelector('.burger');
-      navLinks.classList.remove('active'); // Remove active class when a link is clicked
-      burger.classList.remove('active');   // Remove active class from burger
-    }
-  </script>
+      <div class="cert-grid">
+        <!-- 1. Web Development Certificate -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/Web Development Certificate.jpeg" alt="Web Dev Certificate">
+            </div>
+            <div class="card-back">
+              <h3>Certified Web Developer</h3>
+              <p>Issued by: Eduonix</p>
+              <a href="https://www.eduonix.com/certificate/9d19819e63" target="_blank">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
 
-  <script>
-    // Show the "Back to Top" button when scrolling down
-    window.onscroll = function () {
-      let backToTopButton = document.getElementById("back-to-top");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTopButton.style.display = "block"; // Show button
-      } else {
-        backToTopButton.style.display = "none"; // Hide button
-      }
-    };
+        <!-- 2. Frontend Coding -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/Frontend Coding certificate.png" alt="Frontend Certificate">
+            </div>
+            <div class="card-back">
+              <h3>Frontend Coding Championship</h3>
+              <p>Issued by: Guvi</p>
+              <a href="https://www.guvi.in/share-certificate/9Bb27w6F017713V12G" target="_blank">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
 
-    // Scroll to top when clicked
-    document.getElementById("back-to-top").addEventListener("click", function (e) {
-      e.preventDefault(); // Prevent default anchor behavior
-      window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
-    });
-  </script>
+        <!-- 3. Microsoft Python -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/Microsoft python certificate.png"
+                alt="Microsoft Python Certificate">
+            </div>
+            <div class="card-back">
+              <h3>IT Specialist - Python</h3>
+              <p>Issued by: Certiport</p>
+              <a href="https://www.credly.com/badges/55fcfc2c-0558-4e4d-b99e-8ef973b2842c/linked_in_profile"
+                target="_blank">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Guvi Python -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/Guvi Python Certificate.png" alt="Guvi Python Certificate">
+            </div>
+            <div class="card-back">
+              <h3>Python</h3>
+              <p>Issued by: Guvi</p>
+              <a href="https://www.guvi.in/certificate?id=P962LA883w1j8J07ig" target="_blank">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. AI Chatbot -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/AI chatBot Python.png" alt="AI Chatbot Certificate">
+            </div>
+            <div class="card-back">
+              <h3>AI Chatbot With Python</h3>
+              <p>Issued by: SkillEcted</p>
+              <a href="https://www.skillected.com/share-certificate?serialno=ZBQFNOU8" target="_blank">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Google Digital Marketing -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/Google Digital Marketing Certificate.png" alt="Google Marketing">
+            </div>
+            <div class="card-back">
+              <h3>Digital Marketing</h3>
+              <p>Issued by: Google</p>
+              <a href="https://skillshop.exceedlms.com/student/award/jNFQFGfr7HPKA6SkDnm5MEvM" target="_blank">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Wipro FullStack -->
+        <div class="cert-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/ASSETS/IMAGES/CERTIFICATIONS/Wipro_Certificate.png" alt="Wipro Fullstack Certificate">
+            </div>
+            <div class="card-back">
+              <h3>Java FullStack Development</h3>
+              <p>Issued by: Wipro</p>
+              <a href="https://cert.diceid.com/cid/8Zo53JgCXu?verify=true" target="_blank">View
+                Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-heading">
+          <h2><span class="highlight">Let's Connect</span></h2>
+          <p>Open for freelance, collaborations, or full-time roles — in India 🇮🇳 or the UK 🇬🇧.</p>
+        </div>
+
+        <!-- Right Form Side -->
+        <form action="https://formspree.io/f/xnqeaeea" method="POST" class="contact-form-modern">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+      </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-name">Vetrivel K</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-note">© 2025 Vetrivel K — Open to UK Opportunities 🇬🇧</div>
+      </div>
+    </footer>
+
+
+  </main>
+
+  <script src="/ASSETS/SCRIPT/script.js"></script>
 
 </body>
 
