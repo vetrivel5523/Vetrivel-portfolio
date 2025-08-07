@@ -943,6 +943,7 @@ body.light-mode .card-back {
     flex-direction: column;
     justify-content: space-between;
     transition: 0.3s ease;
+    margin-bottom: 0px;
 }
 
 .testimonial-card:hover {
@@ -985,6 +986,35 @@ body.light-mode .card-back {
 .dark-mode .testimonial-card {
     background: rgba(255, 255, 255, 0.03);
 }
+
+.testimonial-impact {
+    font-size: 0.95rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin: 10px 0 10px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.business-profile-btn {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    background: var(--primary);
+    color: #000;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0, 255, 166, 0.3);
+    transition: 0.3s ease;
+}
+
+.business-profile-btn:hover {
+    background: #00e79c;
+    transform: scale(1.05);
+}
+
 
 /* ===== Contact Section ===== */
 
@@ -1057,20 +1087,30 @@ body.light-mode .card-back {
     text-align: center;
     border-radius: 20px;
     margin: 60px auto 20px;
-    max-width: 900px;
+    max-width: 600px;
     box-shadow: 0 8px 25px rgba(0, 255, 166, 0.2);
+    width: 90%;
+}
+
+.hire-me-cta .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .hire-me-cta h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 .hire-me-cta p {
     font-size: 1rem;
     margin-bottom: 20px;
     opacity: 0.9;
+    line-height: 1.6;
 }
 
 .hire-btn {
@@ -1089,7 +1129,7 @@ body.light-mode .card-back {
     transform: scale(1.05);
 }
 
-/* Dark mode fix */
+/* Dark Mode */
 .dark-mode .hire-me-cta {
     background: var(--primary);
     color: #000;
@@ -1099,6 +1139,28 @@ body.light-mode .card-back {
     background: #000;
     color: var(--primary);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .hire-me-cta {
+        padding: 40px 15px;
+        width: 87%;
+    }
+
+    .hire-me-cta h2 {
+        font-size: 1.4rem;
+    }
+
+    .hire-me-cta p {
+        font-size: 0.95rem;
+    }
+
+    .hire-btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+}
+
 
 /* ===== Footer Section ===== */
 
