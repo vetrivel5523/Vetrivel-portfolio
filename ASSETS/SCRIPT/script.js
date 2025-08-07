@@ -1,3 +1,15 @@
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    preloader.style.visibility = 'hidden';
+    setTimeout(() => {
+        preloader.remove();
+    }, 600);
+});
+
+
+
 const themeToggle = document.getElementById("themeToggle");
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
@@ -24,7 +36,7 @@ navLinkItems.forEach(link => {
 
 const typingText = document.getElementById("typingText");
 const titles = [
-    "Creative UI/UX Designer",
+    "Youth Mobility Visa Holder 🇬🇧 ",
     "Front-end Web Developer",
     "Data Analyst with Python & Excel",
     "Open to UK Job Opportunities 🇬🇧"
@@ -75,3 +87,14 @@ function filterProjects(category) {
         }
     });
 }
+
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.progress').forEach(bar => {
+        const top = bar.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (top < windowHeight - 100) {
+            bar.style.width = bar.getAttribute('data-skill');
+        }
+    });
+});
+
