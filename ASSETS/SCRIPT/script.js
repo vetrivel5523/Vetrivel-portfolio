@@ -39,6 +39,7 @@ const titles = [
     "Youth Mobility Visa Holder 🇬🇧 ",
     "Front-end Web Developer",
     "Data Analyst with Python & Excel",
+    "Youth Mobility Visa Holder 🇬🇧 ",
     "Open to UK Job Opportunities 🇬🇧"
 ];
 
